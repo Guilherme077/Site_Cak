@@ -31,22 +31,11 @@ header{
     width: 50%;
 }
 
-.menu{
-    padding-top: 25px;
-    width: 50%;
-    text-align: right;
-}
-
-.menu a{
-    color: rgb(127 127 255);
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 20px;
-    padding: 3px;
-    background-color: #150578;
-    border-radius: 5px;
-    
-}
+nav ul.dropdown {
+    height: 0;
+    display: none;
+    transition: all 0.5s ease;
+  }
 .apresentacao{
     display: flex;
     flex-wrap: wrap;

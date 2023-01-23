@@ -11,13 +11,15 @@
     <header>
         <div class="center">
             <div class="logo"> <img src="IMG/Logo_resized.png"> </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Pontuações</a>
-                <a href="#">Inscrições</a>
-                <a href="#">Notícias</a>
-                <a href="#">Sobre</a>
-            </div>
+            <nav>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Pontuações</a></li>
+                  <li><a href="#">Inscrições</a></li>
+                  <li><a href="#">Notícias</a></li>
+                  <li><a href="#">Sobre a CAK</a></li>
+                </ul>
+              </nav>
         </div>
     </header>
 
@@ -32,7 +34,17 @@
     </div>
 
 
-    
+    <script>
+        var button = document.querySelector("button");
+var menu = document.querySelector("nav ul.dropdown");
+button.addEventListener("click", function() {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});
+    </script>
 
 </body>
 </html>
